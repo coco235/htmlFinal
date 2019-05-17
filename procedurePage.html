@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>hzy_ZUEL OJ</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/line-awesome.css">
+    <link rel="stylesheet" href="css/my.css">
+</head>
+
+<body class="bodyPage">
+    <div class="main-panel3">
+        <div class="exam-card">
+            <div class="baseInfo">
+                <div class="card-header exam-type-header">
+                    <div class="card-title">绘画世界</div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-9">
+                    <div class="card onecard">
+                        <div class="card-header">
+                            <div class="exam-type">程序题</div>
+                        </div>
+                        <div class="card-body">
+                            <div class="subject">
+                                <div class="procedure" id="procedure1">
+                                    <div class="proHeader">
+                                        <span>1.</span>
+                                        <span>(100分)</span>
+                                    </div>
+                                    <div class="proTitle">通过栈操作产生异序词</div>
+                                    <div class="titleDescrip">
+                                        <div class="part1">
+                                            <div class="partTitle">题目描述</div>
+                                            <pre class="procedureFrame">
+                                                <div class="part1des">易位构词游戏通过改变单词中字母的相互次序构成具有相同字母的异序词（anagram）。通过堆栈的操作也可以产生异序词，例如将单词trot转变为tort可以有以下两种操作序列：
+[
+i i i i o o o o
+i o i i o o i o
+]
+其中，i表示入栈操作，o表示出栈操作。
+请编写程序通过堆栈操作将第一个单词转换为第二个单词。
+合法的堆栈操作序列会对一个单词的字母次序进行重组，例如操作序列i i o i o o 就将单词foo重新排列成oof，序列i i i o o o 也可以完成同样的工作。</div></pre>
+                                        </div>
+                                        <div class="part2">
+                                            <div class="partTitle">输入描述</div>
+                                            <pre class="procedureFrame">
+                                                <div class="part2des">输入有多行，每两行为一个测试用例。每个测试用例的第一行是源单词（不包含换行符），第二行是目标单词（也不包含换行符），由文件结束符标志输入结束。</div></pre>
+                                        </div>
+                                        <div class="part3">
+                                            <div class="partTitle">输出描述</div>
+                                            <pre class="procedureFrame">
+                                                <div class="part3des">对于每对单词，有多种有效的栈操作序列从源单词产生目标单词，将每种序列中的i和o依操作顺序输出，每个i和o后面都有一个空格。不同序列之间以字典序排列。每对单词的全体可操作序列以”[“和“]”包围（不包括引号）。</div></pre>
+                                        </div>
+                                        <div class="part4">
+                                            <div class="partTitle">输入样例</div>
+                                            <pre class="procedureFrame">
+                                                <div class="part4des">madam
+adamm
+bahama
+bahama
+long
+short
+eric
+rice</div></pre>
+                                        </div>
+                                        <div class="part5">
+                                            <div class="partTitle">输出样例</div>
+                                            <pre class="procedureFrame">
+                                                <div class="part5des">[
+i i i i o o o i o o 
+i i i i o o o o i o 
+i i o i o i o i o o 
+i i o i o i o o i o 
+]
+[
+i o i i i o o i i o o o 
+i o i i i o o o i o i o 
+i o i o i o i i i o o o 
+i o i o i o i o i o i o 
+]
+[
+]
+[
+i i o i o i o o 
+]</div></pre>
+                                        </div>
+                                    </div>
+                                    <div class="procedureAnsFrame">
+                                        <div class="form-groups">
+                                            <div class="partTitle">请在此编写程序</div>
+                                            <textarea name="pro1" id="pro1" cols="30"></textarea>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card-action">
+                                <button type="submit" class="btn btn-success"
+                                    onclick="window.location.href='oneExam.html'">提交</button>
+                                <button type="" class="btn btn-info"
+                                    onclick="window.location.href='exams.html'">返回</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-2">
+                    <div class="card onecardAnswer">
+                        <div class="card-header">
+                            <div class="examAnswerCard">答题卡</div>
+                        </div>
+                        <div class="card-body">
+                            <div id="content">
+                                <div class="cardAnswerSty">
+                                    <button type="button" class="btn btn-primary"
+                                        onclick="window.location.hash = '#procedure1'">1</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

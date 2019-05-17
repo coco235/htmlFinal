@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>hzy_ZUEL OJ</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/line-awesome.css">
+    <link rel="stylesheet" href="css/my.css">
+</head>
+
+<body>
+    <div class="wrapper">
+        <div class="main-header">
+            <div class="logo-header">
+                <a href="index.html" class="logo">
+                    ZUEL&nbsp; OJ
+                </a>
+            </div>
+            <nav class="navbar navbar-header navbar-expand-lg">
+                <div class="container-fluid">
+                    <form class="nav-search" action="#">
+                        <div class="input-group">
+                            <input type="text" placeholder="建设中 ..." class="form-control">
+                        </div>
+                    </form>
+                    <ul class="navbar-nav align-items-center">
+                        <!-- align-items-center:垂直方向上子元素的堆叠 -->
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">
+                                <i class="la la-envelope"></i>
+                            </a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <button type="button" class="ivu-btn" onclick="window.location.href='./login.html'">
+                                <span>登录</span>
+                            </button>
+                            <button type="button" class="ivu-btn btn2"
+                                onclick="window.location.href='./register.html'">
+                                <span>注册</span>
+                            </button>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+        </div>
+        <div class="sidebar">
+            <div class="sidebar-wrapper">
+                <ul class="nav">
+                    <li class="nav-item">
+                        <a href="index.html">
+                            <i class="la la-home"></i>
+                            <p>主页</p>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="./exams.html">
+                            <i class="la la-file-text"></i>
+                            <p>考试</p>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="./personal.html">
+                            <i class="la la-keyboard-o"></i>
+                            <p>个人</p>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="main-panel">
+            <div class="content">
+                <div class="container-fluid">
+                    <div class="row">
+                        <div class="col-md-9 login-card">
+                            <div class="card">
+                                <div class="card-header">
+                                    <div class="card-title">登录</div>
+                                </div>
+                                <form action="personal.html">
+                                    <div class="card-body">
+                                        <div class="form-group">
+                                            <label>账号</label>
+                                            <input type="text" class="form-control" placeholder="账号/邮箱/电话号码"
+                                                onfocus="if(placeholder=='账号/邮箱/电话号码') {placeholder=''}"
+                                                onblur="if (value=='') {placeholder='账号/邮箱/电话号码'}">
+                                        </div>
+                                        <div class="form-group">
+                                            <label>密码</label>
+                                            <input type="password" class="form-control" placeholder="请输入密码"
+                                                onfocus="if(placeholder=='请输入密码') {placeholder=''}"
+                                                onblur="if (value=='') {placeholder='请输入密码'}">
+                                        </div>
+                                        <div class="card-action">
+                                            <button type="submit" class="btn btn-success"
+                                                onclick="window.location.href='index.html'">登录</button>
+                                            <button type="button" class="btn btn-info"
+                                                onclick="window.location.href='index.html'">返回</button>
+                                        </div>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <footer class="footer">
+                <div class="container-fluid">
+                    <div class="footer-li footer-li1">
+                        <ul class="nav">
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">
+                                    关于我们
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">
+                                    帮助
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">
+                                    证书
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="footer-li footer-li2">
+                        2019, made with
+                        <i class="la la-heart heart text-danger"></i>
+                        by
+                        <a href="http://www.zuel.edu.cn/">ZUEL</a>
+                    </div>
+                </div>
+            </footer>
+        </div>
+    </div>
+</body>
+
+</html>

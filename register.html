@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>hzy_ZUEL OJ</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/line-awesome.css">
+    <link rel="stylesheet" href="css/my.css">
+</head>
+
+<body>
+    <div class="wrapper">
+        <div class="main-header">
+            <div class="logo-header">
+                <a href="index.html" class="logo">
+                    ZUEL&nbsp; OJ
+                </a>
+            </div>
+            <nav class="navbar navbar-header navbar-expand-lg">
+                <div class="container-fluid">
+                    <form class="nav-search" action="#">
+                        <div class="input-group">
+                            <input type="text" placeholder="建设中 ..." class="form-control">
+                        </div>
+                    </form>
+                    <ul class="navbar-nav align-items-center">
+                        <!-- align-items-center:垂直方向上子元素的堆叠 -->
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">
+                                <i class="la la-envelope"></i>
+                            </a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <button type="button" class="ivu-btn" onclick="window.location.href='./login.html'">
+                                <span>登录</span>
+                            </button>
+                            <button type="button" class="ivu-btn btn2"
+                                onclick="window.location.href='./register.html'">
+                                <span>注册</span>
+                            </button>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+        </div>
+        <div class="sidebar">
+            <div class="sidebar-wrapper">
+                <ul class="nav">
+                    <li class="nav-item">
+                        <a href="index.html">
+                            <i class="la la-home"></i>
+                            <p>主页</p>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="./exams.html">
+                            <i class="la la-file-text"></i>
+                            <p>考试</p>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="./personal.html">
+                            <i class="la la-keyboard-o"></i>
+                            <p>个人</p>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="main-panel">
+            <div class="content">
+                <div class="container-fluid">
+                    <h4 class="page-title register-headline">注册</h4>
+                    <div class="row">
+                        <div class="col-md-9 register-card">
+                            <div class="card">
+                                <div class="card-header">
+                                    <div class="card-title">个人信息</div>
+                                </div>
+                                <form action="index.html">
+                                    <div class="card-body">
+                                        <div class="form-group">
+                                            <label>账号</label>
+                                            <input type="text" class="form-control" placeholder="请输入账号"
+                                                onfocus="if(placeholder=='请输入账号') {placeholder=''}"
+                                                onblur="if (value=='') {placeholder='请输入账号'}">
+                                        </div>
+                                        <div class="form-group">
+                                            <label>用户名</label>
+                                            <input type="text" class="form-control" placeholder="请输入用户名"
+                                                onfocus="if(placeholder=='请输入用户名') {placeholder=''}"
+                                                onblur="if (value=='') {placeholder='请输入用户名'}">
+                                        </div>
+                                        <div class="form-group">
+                                            <label>真实姓名</label>
+                                            <input type="text" class="form-control" placeholder="请输入真实姓名"
+                                                onfocus="if(placeholder=='请输入真实姓名') {placeholder=''}"
+                                                onblur="if (value=='') {placeholder='请输入真实姓名'}">
+
+                                        </div>
+                                        <div class="form-check">
+                                            <label>性别</label><br />
+                                            <label>
+                                                <input class="form-radio-input" type="radio" name="optionsRadios"
+                                                    value="" checked="">
+                                                <span>男</span>
+                                            </label>
+                                            <label class="ml-3">
+                                                <input class="form-radio-input" type="radio" name="optionsRadios"
+                                                    value="">
+                                                <span>女</span>
+                                            </label>
+                                        </div>
+                                        <div class="form-group">
+                                            <label>邮箱</label>
+                                            <input type="text" class="form-control" placeholder="请输入邮箱"
+                                                onfocus="if(placeholder=='请输入邮箱') {placeholder=''}"
+                                                onblur="if (value=='') {placeholder='请输入邮箱'}">
+                                        </div>
+                                        <div class="form-group">
+                                            <label>电话号码</label>
+                                            <input type="text" class="form-control" placeholder="请输入电话号码"
+                                                onfocus="if(placeholder=='请输入电话号码') {placeholder=''}"
+                                                onblur="if (value=='') {placeholder='请输入电话号码'}">
+                                        </div>
+                                        <div class="form-group">
+                                            <label>头像</label>
+                                            <input type="file" class="form-control-file">
+                                        </div>
+                                        <div class="card-action">
+                                            <button type="submit" class="btn btn-success"
+                                                onclick="window.location.href='index.html'">注册</button>
+                                            <button type="button" class="btn btn-info"
+                                                onclick="window.location.href='index.html'">返回</button>
+                                        </div>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <footer class="footer">
+                <div class="container-fluid">
+                    <div class="footer-li footer-li1">
+                        <ul class="nav">
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">
+                                    关于我们
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">
+                                    帮助
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">
+                                    证书
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="footer-li footer-li2">
+                        2019, made with
+                        <i class="la la-heart heart text-danger"></i>
+                        by
+                        <a href="http://www.zuel.edu.cn/">ZUEL</a>
+                    </div>
+                </div>
+            </footer>
+
+        </div>
+    </div>
+</body>
+
+</html>

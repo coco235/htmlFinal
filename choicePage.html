@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>hzy_ZUEL OJ</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/line-awesome.css">
+    <link rel="stylesheet" href="css/my.css">
+</head>
+
+<body class="bodyPage">
+    <div class="main-panel3">
+        <div class="exam-card">
+            <div class="baseInfo">
+                <div class="card-header exam-type-header">
+                    <div class="card-title">绘画世界</div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-9">
+                    <div class="card onecard">
+                        <div class="card-header">
+                            <div class="exam-type">选择题</div>
+                        </div>
+                        <div class="card-body">
+                            <div class="subject">
+                                <div class="choice" id="choice1">
+                                    <div class="col-md-12 choiceContent">
+                                        <span>
+                                            1. 一个算法的空间复杂度为O(10)，表示执行该算法不需要任何临时空间。
+                                        </span>
+                                        <span>
+                                            (2分)
+                                        </span>
+                                    </div>
+                                    <div class="col-md-12 choiceAnswer">
+                                        <form action="">
+                                            <div class="card-body">
+                                                <div class="form-check">
+                                                    <label>
+                                                        <input class="form-radio-input" type="radio" value="">
+                                                        <span>A.1</span>
+                                                    </label>
+                                                    <label class="ml-3">
+                                                        <input class="form-radio-input" type="radio" value="">
+                                                        <span>B.3323</span>
+                                                    </label>
+                                                    <label class="ml-3">
+                                                        <input class="form-radio-input" type="radio" value="">
+                                                        <span>C.2</span>
+                                                    </label>
+                                                    <label class="ml-3">
+                                                        <input type="radio" value="">
+                                                        <span>D.fd</span>
+                                                    </label>
+                                                </div>
+                                            </div>
+                                        </form>
+                                    </div>
+
+                                </div>
+                                <div class="choice" id="choice2">
+                                    <div class="col-md-12 choiceContent">
+                                        <span>
+                                            2. while和do…while循环不论什么条件下它们的结果都是相同的.
+                                        </span>
+                                        <span>
+                                            (2分)
+                                        </span>
+                                    </div>
+                                    <div class="col-md-12 choiceAnswer">
+                                        <form action="">
+                                            <div class="card-body">
+                                                <div class="form-check">
+                                                    <label>
+                                                        <input class="form-radio-input" type="radio" value="">
+                                                        <span>A</span>
+                                                    </label>
+                                                    <label class="ml-3">
+                                                        <input class="form-radio-input" type="radio" value="">
+                                                        <span>B</span>
+                                                    </label>
+                                                    <label class="ml-3">
+                                                        <input class="form-radio-input" type="radio" value="">
+                                                        <span>C</span>
+                                                    </label>
+                                                    <label class="ml-3">
+                                                        <input class="form-radio-input" type="radio" value="">
+                                                        <span>D</span>
+                                                    </label>
+                                                </div>
+                                            </div>
+                                        </form>
+                                    </div>
+                                </div>
+                                <div class="choice" id="choice3">
+                                    <div class="col-md-12 choiceContent">
+                                        <span>
+                                            3. 一个算法的空间复杂度为O(10)，表示执行该算法不需要任何临时空间。
+                                        </span>
+                                        <span>
+                                            (2分)
+                                        </span>
+                                    </div>
+                                    <div class="col-md-12 choiceAnswer">
+                                        <form action="">
+                                            <div class="card-body">
+                                                <div class="form-check">
+                                                    <label>
+                                                        <input class="form-radio-input" type="radio" value="">
+                                                        <span>A</span>
+                                                    </label>
+                                                    <label class="ml-3">
+                                                        <input class="form-radio-input" type="radio" value="">
+                                                        <span>B</span>
+                                                    </label>
+                                                    <label class="ml-3">
+                                                        <input class="form-radio-input" type="radio" value="">
+                                                        <span>C</span>
+                                                    </label>
+                                                    <label class="ml-3">
+                                                        <input class="form-radio-input" type="radio" value="">
+                                                        <span>D</span>
+                                                    </label>
+                                                </div>
+                                            </div>
+                                        </form>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card-action">
+                                <button type="submit" class="btn btn-success"
+                                    onclick="window.location.href='oneExam.html'">提交</button>
+                                <button type="" class="btn btn-info"
+                                    onclick="window.location.href='exams.html'">返回</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-2">
+                    <div class="card onecardAnswer">
+                        <div class="card-header">
+                            <div class="examAnswerCard">答题卡</div>
+                        </div>
+                        <div class="card-body">
+                            <div id="content">
+
+                                <div class="cardAnswerSty">
+                                    <button type="button" class="btn btn-primary"
+                                        onclick="window.location.hash = '#choice1'">1</button>
+                                    <button type="button" class="btn btn-primary"
+                                        onclick="window.location.hash = '#choice2'">2</button>
+                                    <button type="button" class="btn btn-primary"
+                                        onclick="window.location.hash = '#choice3'">3</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</body>
+
+</html>
