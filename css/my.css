@@ -1,0 +1,586 @@
+/*  布局设置 */
+html{
+  height: 100%;
+}
+/* 将页面分为三部分：头部、左侧边栏、主面板 */
+body {
+  min-height: 100%;
+  position: relative;
+}
+.bodyPage{
+  background:#f2f3f8;
+}
+
+/* 整体的页面设置 */
+.wrapper {
+  min-height: 100%;
+  position: relative;
+  top: 0;
+  height: 100%;
+}
+
+/* 头部内容的设置 */
+.main-header {
+  min-height: 55px;
+  width: 100%;
+  background: #ffffff;
+  position: fixed;   /* 头部内容是固定的，不随页面的滚动而变化 */
+  z-index: 1001;   /*设置为最上层元素*/
+  border-bottom: 1px solid #eee;
+}
+
+/* 头部-左部logo */
+.main-header .logo-header {
+  float: left;
+  width: 190px;
+  height: 55px;
+  line-height: 55px;
+  border-right: 1px solid #eee;
+  color: #333333;
+  z-index: 1001;
+  font-size: 18px;
+  font-weight: 600;
+  padding-left: 25px;
+  padding-right: 25px;
+  text-align: center;
+}
+
+/* 头部-左部logo-链接 */
+.main-header .logo-header .logo {
+  color: #575962;
+  text-decoration: none;
+}
+
+/* 左侧导航栏设置 */
+.sidebar {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  width: 190px;
+  display: block;
+  z-index: 1;
+  color: #ffffff;
+  font-weight: 200;
+  background: #ffffff;
+}
+
+.sidebar .sidebar-wrapper {
+  position: relative;
+  max-height: calc(100vh - 75px);
+  min-height: 100%;
+  overflow: auto;
+  width: 190px;
+  z-index: 4;
+  padding-top: 55px;
+  padding-bottom: 100px;
+}
+
+.sidebar .nav {
+  display: block;
+  float: none;
+  margin-top: 20px;
+}
+
+.sidebar .nav .nav-item {
+  display: list-item;
+}
+
+.sidebar .nav .nav-item.active a {
+  color: #575962;
+  font-weight: 700;
+}
+
+.sidebar .nav .nav-item.active a i {
+  color: #4d7cfe;
+}
+
+.sidebar .nav .nav-item a {
+  display: flex;
+  align-items: center;
+  color: #83848a;
+  padding: 13px 25px;
+  width: 100%;
+  font-size: 14px;
+  font-weight: 600;
+  position: relative;
+  margin-bottom: 5px;
+}
+
+.sidebar .nav .nav-item a:hover,
+.sidebar .nav .nav-item a:focus {
+  text-decoration: none;
+  background: #fbfbfb;
+}
+
+.sidebar .nav .nav-item a i {
+  font-size: 23px;
+  color: #C3C5CA;
+  margin-right: 15px;
+  width: 25px;
+  text-align: center;
+  vertical-align: middle;
+  float: left;
+}
+
+.sidebar .nav .nav-item a p {
+  font-size: 14px;
+  margin-bottom: 0px;
+  letter-spacing: .04em;
+  margin-right: 5px;
+}
+
+/* 主面板设置 */
+.main-panel {
+  position: relative;
+  width: calc(100% - 190px);
+  min-height: 100%;
+  float: right;
+  background: #f2f3f8;
+}
+
+.main-panel .content {
+  padding: 30px 15px 10px 15px;
+  min-height: calc(100% - 123px);
+  margin-top: 55px;
+}
+
+/* 尾注设置 */
+.footer {
+  border-top: 1px solid #eee;
+  padding: 15px;
+  background: #ffffff;
+}
+.footer-li{
+  display: inline-block;
+}
+.footer-li1{
+  float: left;
+}
+.footer-li2{ 
+  padding-left: 600px;
+}
+.footer .container-fluid{
+  display: flex;
+  align-items: center;
+}
+
+/*卡片面板*/
+.card {
+  border-radius: 0px;
+  background-color: #ffffff;
+  margin-bottom: 30px;
+  -webkit-box-shadow: 0px 1px 15px 1px rgba(69, 65, 78, 0.08);
+  -moz-box-shadow: 0px 1px 15px 1px rgba(69, 65, 78, 0.08);
+  box-shadow: 0px 1px 15px 1px rgba(69, 65, 78, 0.08);
+  border: 1px solid #eee;
+}
+
+.card .card-header {
+  padding: 15px 15px;
+  background-color: transparent;
+  border-bottom: 1px solid #ebedf2;
+}
+
+.card .card-title,
+.exam-card .card-title {
+  color: #575962;
+  font-size: 28px;
+  font-weight: 550;
+  line-height: 1.6;
+  text-align: center;
+}
+
+.exam-card .card-header {
+  margin: 0px auto;
+}
+
+.examTime,.otherInfo {
+  color: #007bff;
+  font-size: 15px;
+  font-weight: 500;
+  line-height: 1.6;
+  text-align: center;
+  margin-top: 10px;
+  margin-bottom: 15px;
+}
+.selfExamName a{
+  text-decoration: none;
+}
+.card-header span {
+  padding: 0px 20px;
+}
+
+.card .exam-type,.card .examAnswerCard {
+  color: #007bff;
+  font-size: 20px;
+  font-weight: 550;
+  line-height: 1.6;
+  text-align: center;
+}
+
+.exam-type-header {
+  border-bottom: none;
+}
+
+.card .card-category {
+  margin-top: 5px;
+  font-size: 14px;
+  font-weight: 550;
+  color: #fff;
+  margin-bottom: 0px;
+}
+
+.card label {
+  font-size: 14px;
+  font-weight: 400;
+  color: #9A9A9A;
+  margin-bottom: 0px;
+}
+
+.card .card-body {
+  padding: 15px 15px 10px 15px;
+}
+
+.card .card-body .judgeContent {
+  padding: 30px 20px;
+}
+.card .card-body .choiceContent ,.card .card-body .completion,.card .card-body .procedure{
+  padding: 30px 20px 0px 20px;
+}
+.card .card-body .procedure .proTitle{
+  text-align: center;
+  color: #474c4b;
+  font-size: 22px;
+}
+.card .card-body .procedure .partTitle{
+  font-size: 18px;
+  color: #1D62F0;
+}
+.card .card-body .judge ,.card .card-body .choice,.card .card-body .completion,.card .card-body .procedure{
+  border: 1px solid #ebedf2;
+  margin-bottom: 5px;
+}
+.completion .compHeader{
+  padding-bottom: 10px;
+}
+.completion .procedureFrame,.procedure .procedureFrame{
+  border: 1px solid #d0d3d8;
+  margin-top: 10px;
+  background-color: rgb(247, 244, 244);
+  font-size: 14px;
+  White-space: Pre-wrap;
+}
+.procedure .procedureFrame{
+  margin-bottom: 33px;
+}
+.procedure .procedureAnsFrame textarea{
+  width:100%; 
+  height: 400px; 
+  background-color:rgb(250, 246, 246);
+  border: 1px solid #d0d3d8;
+}
+.completionAnsFrame .form-groups{
+    margin-bottom: 0;
+    padding: 15px 0px;
+}
+
+.onecardAnswer #content {
+  padding: 5px;
+}
+
+.onecardAnswer {
+  position: fixed;
+  width: 264px;
+}
+
+.onecardAnswer #content button {
+  width: 35px;
+  margin: 3px;
+}
+
+.onecard #submit {
+  width: 70px;
+  height: 30px;
+  float: right;
+  top: 170px;
+  right: 150px;
+}
+
+.onecardAnswer .cardAnswerSty {
+  padding: 0px;
+  text-align: center;
+  background-color: transparent;
+  line-height: 30px;
+  border-top: 1px solid #ebedf2;
+  font-size: 14px;
+}
+
+.onecardAnswer .btn {
+  padding: 4px 12px;
+}
+
+.card .card-footer {
+  background-color: transparent;
+  line-height: 30px;
+  border-top: 1px solid #ebedf2;
+  font-size: 14px;
+}
+
+.card-body ul {
+  padding: 5px 15px 10px 15px;
+}
+
+.card-body li {
+  padding-top: 15px;
+  list-style: none;
+  padding-bottom: 15px;
+  margin-left: 20px;
+  font-size: 16px;
+  border-bottom: 1px solid hsla(0, 0%, 73%, .5);
+  border-color: #ebedf2;
+}
+.card .card-action {
+  padding: 30px;
+  text-align: center;
+  background-color: transparent;
+  line-height: 30px;
+  border-top: 1px solid #ebedf2;
+  font-size: 14px;
+}
+
+.card .card-footer .legend {
+  display: inline-block;
+}
+.legend a{
+  text-decoration:none;
+}
+
+.card-footer i{
+  color: #1D62F0;
+}
+.card-category {
+  margin-top: 0px;
+}
+
+.icon-big {
+  font-size: 3em;
+  min-height: 64px;
+  text-align: center
+}
+
+.card1 {
+  background: #fbad4c;
+}
+.card2 {
+  background: #59d05d;
+}
+.card3 {
+  background: #ff646d;
+}
+.card4 {
+  background: #1D62F0;
+}
+.card1,.card2,.card3,.card4,.numbers p{
+  color: #fff;
+}
+
+title .exam-search-btn {
+  display: inline-block;
+  font-size: 14px;
+  margin: auto 30px auto 418px;
+  padding: 5px 10px;
+}
+
+.main-panel2 .exam-card {
+  margin-top: 30px;
+  margin-left: auto;
+  margin-right: auto;
+  width: 1000px;
+  height: 500px;
+  background-color: #fff;
+  -webkit-box-shadow: 0px 1px 15px 1px rgba(69, 65, 78, 0.08);
+  -moz-box-shadow: 0px 1px 15px 1px rgba(69, 65, 78, 0.08);
+  box-shadow: 0px 1px 15px 1px rgba(69, 65, 78, 0.08);
+  border: 1px solid #eee;
+  border-radius: 0px;
+}
+
+.main-panel2 .card2 {
+  width: 800px;
+  height: 400px;
+  margin: 30px auto;
+}
+
+.main-panel2 .card {
+  width: 700px;
+  margin: 30px auto;
+}
+
+.main-panel3 .exam-card {
+  margin-top: 30px;
+  margin-left: auto;
+  margin-right: auto;
+  width: 1200px;
+  background-color: #fff;
+  -webkit-box-shadow: 0px 1px 15px 1px rgba(69, 65, 78, 0.08);
+  -moz-box-shadow: 0px 1px 15px 1px rgba(69, 65, 78, 0.08);
+  box-shadow: 0px 1px 15px 1px rgba(69, 65, 78, 0.08);
+  border: 1px solid #eee;
+  border-radius: 0px;
+}
+
+.card-title .exam-search {
+  width: 250px;
+  display: inline-block;
+}
+
+.form-radio-input {
+  position: relative;
+  margin-top: .3rem;
+}
+
+/*输入框设置*/
+.form-group,
+.form-check {
+  margin-bottom: 0;
+  padding: 15px 10px;
+}
+
+.form-group #user-img {
+  width: 70px;
+  height: 70px;
+}
+
+.form-group label,.form-check label {
+  margin-bottom: .5rem;
+  color: #3f4047;
+  font-weight: 400;
+  font-size: 1rem;
+}
+
+/*表格设置 */
+.table {
+  color: #555;
+}
+
+.table thead th {
+  color: #554;
+  border-bottom-width: 2px;
+}
+
+.table td,
+.table th {
+  font-size: 17px;
+  border-color: #ebedf2;
+  padding: 0.75rem;
+  text-indent: 1em;
+}
+
+.table table{
+  width: 100%;
+  font-size: 15px;
+}
+
+/*上侧导航栏*/
+.navbar .navbar-nav .nav-item .nav-link {
+  display: inline-block;
+  vertical-align: middle;
+  color: #666;
+  line-height: 55px;
+  letter-spacing: 0.04em;
+  padding: 0 20px 0 0;
+  position: relative;
+  font-size: 14px;
+  font-weight: 500;
+  text-align: center;
+}
+
+.navbar .navbar-nav .nav-item .nav-link i {
+  font-size: 22px;
+  width: 30px;
+  vertical-align: middle;
+}
+
+.navbar-header {
+  padding: 0px 15px;
+}
+
+/*头部-右侧-搜索框*/
+.nav-search .input-group {
+  border: 1px solid #eee;
+  background: #eee;
+  border-radius: 50px;
+}
+
+.nav-search .input-group:hover,
+.nav-search .input-group:focus {
+  border: 1px solid #ddd;
+}
+
+/* 头部-右侧-搜索框-input部分 */
+.nav-search .form-control {
+  border: 0;
+  background: transparent;
+  font-size: 14px;
+}
+
+/* 头部-右侧-搜索框-搜索标签部分 */
+.nav-search .input-group-text {
+  border: 0;
+  background: transparent;
+}
+/* 头部-右侧-搜索框-搜索标签icon */
+.nav-search .search-icon {
+  font-size: 21px;
+  color: #666;
+}
+
+/* 个人页面 */
+.personal-panel{
+  margin-top: 65px;
+}
+.person-name{
+  font-size: 30px;
+  text-align: center;
+  color:  rgb(161, 159, 159);
+  font-weight: 700px;
+  margin-top: 7px;
+}
+.person-info{
+  margin: 8px 270px;
+  border-top: 1px solid rgb(185, 184, 184);
+  padding: 20px;
+}
+.person-info .row{
+  text-align: center;
+  color: #575962;
+}
+.person-info .c1,.person-info .c2{
+  border-right: 1px solid rgb(185, 184, 184);
+}
+.c-bottom{
+  margin-top: 7px;
+  font-weight: 700px;
+  font-size: 22px;
+}
+.motto{
+  font-weight: 700px;
+  text-align: center;
+  padding-top: 20px;
+  font-size: 20px;
+}
+.portrait{
+  text-align: center;
+  margin-top: -75px;
+}
+.portrait img{
+  width: 130px;
+  height: 130px;
+  border: 1px solid  rgb(185, 184, 184);
+  border-radius: 65px;
+}
+
+.btn2{
+  margin-left:5px;
+}
