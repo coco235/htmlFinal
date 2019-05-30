@@ -627,9 +627,6 @@ pre code {
 .container-fluid .register-card{
     padding-left: 250px;
 }
-.container-fluid .login-card{
-    padding-left: 250px;
-}
 .row {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -639,7 +636,9 @@ pre code {
     margin-right: -15px;
     margin-left: -15px
 }
-
+.col-md-push-3 {
+    left: 25%;
+}
 .no-gutters {
     margin-right: 0;
     margin-left: 0
